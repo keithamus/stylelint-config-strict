@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Stylelint sharable config for strict linting",
   "main": "index.js",
+  "stylelint": {
+    "extends": "./index.js"
+  },
   "eslintConfig": {
     "env": {
       "node": true
@@ -47,7 +50,7 @@
     "url": "https://github.com/keithamus/stylelint-config-strict.git"
   },
   "dependencies": {
-    "stylelint": "^2.0.0"
+    "stylelint": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^1.7.2"

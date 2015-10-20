@@ -1,6 +1,6 @@
 # stylelint-config-strict
 
-[StyleLint][] sharable config for strict linting.
+[StyleLint][] sharable config for strict [linting](https://en.wikipedia.org/wiki/Lint_(software)) of CSS.
 
 ## Installation
 
@@ -13,7 +13,7 @@ $ npm install --save-dev stylelint stylelint-config-strict
 ## Usage
 
 This set of configs is meant to be extended on a per-project basis as necessary
-using StyleLint's [shareable configs][config] feature.
+using StyleLint's [shareable configs][] feature.
 
 To start, simply add `extends: ["strict"]` to your `.stylelintrc`:
 
@@ -31,19 +31,18 @@ Add any additional plugins you want, for example:
 }
 ```
 
-Feel free to change any rules as you see fit:
+Feel free to define additional rules, or override them as you see fit:
 
 ```json
 {
   "extends": ["strict"],
-
   "rules": {
-      "string-quotes": [2, "double"]
+      "string-quotes": "double"
   }
 }
 ```
 
-For more details about how shareable configs work, see the [StyleLint documentation][config].
+For more details about how shareable configs work, see the [StyleLint documentation][shareable configs].
 
 [StyleLint]: https://github.com/stylelint/stylelint
-[config]: https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md
+[shareable configs]: http://StyleLint.org/docs/developer-guide/shareable-configs
