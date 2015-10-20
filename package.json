@@ -1,0 +1,58 @@
+{
+  "name": "stylelint-config-strict",
+  "version": "1.0.0",
+  "description": "Stylelint sharable config for strict linting",
+  "main": "index.js",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ]
+    }
+  },
+  "keywords": [
+    "strict",
+    "style checker",
+    "code style",
+    "code checker",
+    "code linter",
+    "style linter",
+    "simple",
+    "policy",
+    "style",
+    "code",
+    "lint",
+    "stylelint",
+    "stylelintconfig",
+    "csslint",
+    "hint",
+    "enforce",
+    "check",
+    "verify",
+    "quality",
+    "checker",
+    "code standards",
+    "strict style"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keithamus/stylelint-config-strict.git"
+  },
+  "dependencies": {
+    "stylelint": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.2"
+  },
+  "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
+  "license": "MIT",
+  "scripts": {}
+}
