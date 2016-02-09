@@ -1,10 +1,44 @@
 {
   "name": "stylelint-config-strict",
-  "version": "1.0.0",
   "description": "Stylelint sharable config for strict linting",
+  "keywords": [
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "csslint",
+    "enforce",
+    "hint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "strict",
+    "strict style",
+    "style",
+    "style checker",
+    "style linter",
+    "stylelint",
+    "stylelintconfig",
+    "verify"
+  ],
+  "license": "MIT",
+  "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
   "main": "index.js",
-  "stylelint": {
-    "extends": "./index.js"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/keithamus/stylelint-config-strict.git"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
   },
   "eslintConfig": {
     "env": {
@@ -21,42 +55,17 @@
       ]
     }
   },
-  "keywords": [
-    "strict",
-    "style checker",
-    "code style",
-    "code checker",
-    "code linter",
-    "style linter",
-    "simple",
-    "policy",
-    "style",
-    "code",
-    "lint",
-    "stylelint",
-    "stylelintconfig",
-    "csslint",
-    "hint",
-    "enforce",
-    "check",
-    "verify",
-    "quality",
-    "checker",
-    "code standards",
-    "strict style"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/keithamus/stylelint-config-strict.git"
+  "stylelint": {
+    "extends": "./index.js"
   },
   "dependencies": {
     "stylelint": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
-    "travis-after-all": "^1.4.4"
-  },
-  "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
-  "license": "MIT",
-  "scripts": {}
+    "ghooks": "^1.0.1",
+    "semantic-release": "^4.3.5",
+    "travis-after-all": "^1.4.4",
+    "validate-commit-msg": "^1.0.0"
+  }
 }
