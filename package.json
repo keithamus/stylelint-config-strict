@@ -53,7 +53,8 @@
     "stylelint": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "travis-after-all": "^1.4.4"
   },
   "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
   "license": "MIT",
