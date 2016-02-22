@@ -104,7 +104,7 @@ module.exports = {
     'custom-property-no-outside-root': true,
     // Specify pattern of custom properties.
     // Only lowercase letters and dashes, like CSS properties.
-    'custom-property-pattern': /^([a-z]+-+?)*([a-z]+)$/,
+    'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
 
     // # Declaration
     // Require a single space or disallow whitespace after the bang of declarations.
