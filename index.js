@@ -681,12 +681,11 @@ module.exports = {
 
     // # General / Sheet
     // Specify indentation.
-    // 2 space indentation
     'indentation': 2,
+    // Limit the number of adjacent empty lines.
+    'max-empty-lines': 2,
     // Limit the length of a line.
     'max-line-length': 120,
-    // Disallow more than a specified number of adjacent empty lines.
-    'max-empty-lines': 2,
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
     // Disallow missing end-of-file newline.
