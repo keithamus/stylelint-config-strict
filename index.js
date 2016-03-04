@@ -694,5 +694,7 @@ module.exports = {
     'no-invalid-double-slash-comments': true,
     // Disallow missing end-of-file newline.
     'no-missing-eof-newline': true,
+    // Disallow animation names that do not correspond to a @keyframes declaration.
+    'no-unknown-animations': true,
   },
 };
