@@ -1,11 +1,6 @@
 module.exports = {
   rules: {
 
-    // # Strings
-    // Specify single or double quotes around strings
-    // Strings must always be wrapped with single quotes.
-    'string-quotes': 'single',
-
     // # Color
     // Specify lowercase or uppercase for hex colors.
     // Hex colours must always be lower case.
@@ -19,18 +14,6 @@ module.exports = {
     'color-no-invalid-hex': true,
     // Disallow named colors.
     'color-no-named': true,
-
-    // # Number
-    // Require or disallow a leading zero for fractional numbers less than 1.
-    // There must always be a leading zero.
-    'number-leading-zero': 'always',
-    // Limit the number of decimal places allowed in numbers.
-    // There must be a maximum of 2 decimal places
-    'number-max-precision': 2,
-    // Disallow trailing zeros within numbers.
-    'number-no-trailing-zeros': true,
-    // Disallow units for zero lengths.
-    'number-zero-length-no-unit': true,
 
     // # Function
     // Specify a blacklist of disallowed functions.
@@ -63,6 +46,29 @@ module.exports = {
     // There must always be a single space after the function.
     'function-whitespace-after': 'always',
 
+    // # Number
+    // Require or disallow a leading zero for fractional numbers less than 1.
+    // There must always be a leading zero.
+    'number-leading-zero': 'always',
+    // Limit the number of decimal places allowed in numbers.
+    // There must be a maximum of 2 decimal places
+    'number-max-precision': 2,
+    // Disallow trailing zeros within numbers.
+    'number-no-trailing-zeros': true,
+    // Disallow units for zero lengths.
+    'number-zero-length-no-unit': true,
+
+    // # String
+    // Specify single or double quotes around strings
+    // Strings must always be wrapped with single quotes.
+    'string-quotes': 'single',
+
+    // # Unit
+    // Specify a blacklist of disallowed units.
+    'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
+    // Specify a whitelist of allowed units.
+    // 'unit-whitelist': false,
+
     // # Value
     // Disallow vendor prefixes for values.
     'value-no-vendor-prefix': true,
@@ -81,11 +87,12 @@ module.exports = {
     // There must never be whitespace before the commas in single-line value lists.
     'value-list-comma-space-before': 'never-single-line',
 
-    // # Unit
-    // Specify a blacklist of disallowed units.
-    'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
-    // Specify a whitelist of allowed units.
-    // 'unit-whitelist': false,
+    // # Custom property
+    // Disallow custom properties outside of :root selectors.
+    'custom-property-no-outside-root': true,
+    // Specify pattern of custom properties.
+    // Only lowercase letters and dashes, like CSS properties.
+    'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
 
     // # Property
     // Specify a blacklist of disallowed properties.
@@ -98,13 +105,6 @@ module.exports = {
     // 'property-unit-whitelist': false,
     // Specify a whitelist of allowed properties.
     // 'property-whitelist': false,
-
-    // # Custom property
-    // Disallow custom properties outside of :root selectors.
-    'custom-property-no-outside-root': true,
-    // Specify pattern of custom properties.
-    // Only lowercase letters and dashes, like CSS properties.
-    'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
 
     // # Declaration
     // Require a single space or disallow whitespace after the bang of declarations.
@@ -170,6 +170,10 @@ module.exports = {
     // Require a single space or disallow whitespace before the opening brace of blocks.
     // There must always be a single space before the opening brace.
     'block-opening-brace-space-before': 'always',
+
+    // Root Selector
+    // Disallow standard properties inside :root selectors.
+    'root-no-standard-properties': true,
 
     // # Selector
     // Specify a pattern for class selectors.
@@ -596,10 +600,6 @@ module.exports = {
     // Require or disallow a trailing semicolon within rules.
     // There must always be a trailing semicolon.
     'rule-trailing-semicolon': 'always',
-
-    // # Root
-    // Disallow standard properties inside :root selectors.
-    'root-no-standard-properties': true,
 
     // # Media feature
     // Require a single space or disallow whitespace after the colon in media features.
