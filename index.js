@@ -15,6 +15,15 @@ module.exports = {
     // Disallow named colors.
     'color-no-named': true,
 
+    // # Font family
+    // Specify whether or not quotation marks should be used around font family names,
+    // and whether single or double.
+    'font-family-name-quotes': 'single-where-required',
+
+    // # Font weight
+    // Require consistent numeric or named font-weight values.
+    // 'font-weight-notation': false,
+
     // # Function
     // Specify a blacklist of disallowed functions.
     // 'function-blacklist': false,
