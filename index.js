@@ -119,6 +119,10 @@ module.exports = {
     // 'property-unit-blacklist': false,
     // Specify a whitelist of disallowed units for specfic properties.
     // 'property-unit-whitelist': false,
+    // Specify a blacklist of disallowed property-value pairs.
+    // 'property-value-blacklist':
+    // Specify a whitelist of allowed property-value pairs.
+    // 'property-value-whitelist':
     // Specify a whitelist of allowed properties.
     // 'property-whitelist': false,
 
@@ -200,6 +204,8 @@ module.exports = {
     // Require a single space or disallow whitespace before the combinators of selectors.
     // There must always be a single space before the combinators.
     'selector-combinator-space-before': 'always',
+    // Specify a pattern for id selectors.
+    // 'selector-id-pattern': false,
     // Disallow attribute selectors.
     // 'selector-no-attribute': false,
     // Disallow combinators in selectors.
