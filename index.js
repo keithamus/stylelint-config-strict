@@ -686,6 +686,8 @@ module.exports = {
     'max-empty-lines': 2,
     // Limit the length of a line.
     'max-line-length': 120,
+    // Disallow duplicate selectors.
+    'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
     // Disallow missing end-of-file newline.
