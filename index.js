@@ -690,6 +690,8 @@ module.exports = {
     'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
+    // Disallow double-slash comments (//...) which are not supported by CSS.
+    'no-invalid-double-slash-comments': true,
     // Disallow missing end-of-file newline.
     'no-missing-eof-newline': true,
   },
