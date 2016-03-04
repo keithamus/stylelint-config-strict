@@ -632,6 +632,8 @@ module.exports = {
     'media-feature-colon-space-before': 'never',
     // Disallow vendor prefixes for media feature names.
     'media-feature-name-no-vendor-prefix': true,
+    // Ensure that non-boolean media features have the punctuation they need: either a colon or a range-operator.
+    'media-feature-no-missing-punctuation': true,
     // Require a single space or disallow whitespace after the range operator in media features.
     // There must always be a single space after the range operator.
     'media-feature-range-operator-space-after': 'always',
