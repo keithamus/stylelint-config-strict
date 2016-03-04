@@ -48,7 +48,7 @@ module.exports = {
     'function-parentheses-newline-inside': 'always-multi-line',
     // Require a single space or disallow whitespace on the inside of the parentheses of functions.
     // There must never be whitespace on the inside the parentheses.
-    'function-parentheses-space-inside': 'never',
+    'function-parentheses-space-inside': 'never-single-line',
     // Specify single, double or no quotes for urls.
     // Url quotes must always be single.
     'function-url-quotes': 'single',
