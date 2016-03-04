@@ -75,6 +75,10 @@ module.exports = {
     // Strings must always be wrapped with single quotes.
     'string-quotes': 'single',
 
+    // # Time
+    // Disallow animation and transition times under 100ms.
+    'time-no-imperceptible': true,
+
     // # Unit
     // Specify a blacklist of disallowed units.
     'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
