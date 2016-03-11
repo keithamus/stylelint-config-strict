@@ -8,12 +8,12 @@ module.exports = {
     // Specify short or long notation for hex colors.
     // Hex colours must always use shorthand where possible.
     'color-hex-length': 'short',
+    // Require (where possible) or disallow named colors.
+    'color-named': 'never',
     // Disallow hex colors.
     // 'color-no-hex': false,
     // Disallow invalid hex colors.
     'color-no-invalid-hex': true,
-    // Disallow named colors.
-    'color-no-named': true,
 
     // # Font family
     // Specify whether or not quotation marks should be used around font family names,
@@ -146,115 +146,17 @@ module.exports = {
     'declaration-no-important': true,
 
     // # Declaration block
-    // Disallow single-line declaration blocks
-    'declaration-block-no-single-line': true,
-    // Require a newline or disallow whitespace after the semicolons of declaration blocks.
-    // There must always be a newline after the semicolon.
-    'declaration-block-semicolon-newline-after': 'always',
-    // Require a newline or disallow whitespace before the semicolons of declaration blocks.
-    // There must never be whitespace before the semicolons in multi-line rules.
-    'declaration-block-semicolon-newline-before': 'never-multi-line',
-    // Require a single space or disallow whitespace after the semicolons of declaration blocks.
-    // There must always be a single space after the semicolon in single-line declaration blocks.
-    'declaration-block-semicolon-space-after': 'always-single-line',
-    // Require a single space or disallow whitespace before the semicolons of declaration blocks.
-    // There must never be whitespace before the semicolons.
-    'declaration-block-semicolon-space-before': 'never',
-    // Limit the number of declaration within single line declaration blocks.
-    'declaration-block-single-line-max-declarations': 1,
-
-    // # Block
-    // Require a newline or disallow whitespace after the closing brace of blocks.
-    // There must always be a newline after the closing brace.
-    'block-closing-brace-newline-after': 'always',
-    // Require a newline or disallow whitespace before the closing brace of blocks.
-    // There must always be a newline before the closing brace in multi-line blocks.
-    'block-closing-brace-newline-before': 'always-multi-line',
-    // Require a single space or disallow whitespace after the closing brace of blocks.
-    // There must always be a single space after the closing brace in single-line blocks.
-    'block-closing-brace-space-after': 'always-single-line',
-    // Require a single space or disallow whitespace before the closing brace of blocks.
-    // There must always be a single space before the closing brace in single-line blocks.
-    'block-closing-brace-space-before': 'always-single-line',
-    // Disallow empty blocks.
-    'block-no-empty': true,
-    // Require a newline after the opening brace of blocks.
-    // There must always be a newline after the opening brace.
-    'block-opening-brace-newline-after': 'always-multi-line',
-    // Require a newline or disallow whitespace before the opening brace of blocks.
-    // (this rule is totally bugged out and does not work properly)
-    // 'block-opening-brace-newline-before': false,
-    // Require a single space or disallow whitespace after the opening brace of blocks.
-    // There must always be a single space after the opening brace in single-line blocks.
-    'block-opening-brace-space-after': 'always-single-line',
-    // Require a single space or disallow whitespace before the opening brace of blocks.
-    // There must always be a single space before the opening brace.
-    'block-opening-brace-space-before': 'always',
-
-    // Root Selector
-    // Disallow standard properties inside :root selectors.
-    'root-no-standard-properties': true,
-
-    // # Selector
-    // Specify a pattern for class selectors.
-    'selector-class-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
-    // Require a single space or disallow whitespace after the combinators of selectors.
-    // There must always be a single space after the combinators.
-    'selector-combinator-space-after': 'always',
-    // Require a single space or disallow whitespace before the combinators of selectors.
-    // There must always be a single space before the combinators.
-    'selector-combinator-space-before': 'always',
-    // Specify a pattern for id selectors.
-    // 'selector-id-pattern': false,
-    // Disallow attribute selectors.
-    // 'selector-no-attribute': false,
-    // Disallow combinators in selectors.
-    // 'selector-no-combinator': false,
-    // Disallow id selectors.
-    'selector-no-id': true,
-    // Disallow type selectors.
-    'selector-no-type': true,
-    // Disallow universal selectors.
-    'selector-no-universal': true,
-    // Disallow vendor prefixes for selectors.
-    'selector-no-vendor-prefix': true,
-    // Specify single or double colon notation for applicable pseudo-elements.
-    // Applicable pseudo-elements must always use the double colon notation.
-    'selector-pseudo-element-colon-notation': 'double',
-    // Disallow the composition of:root selectors.
-    'selector-root-no-composition': true,
-
-    // # Selector list
-    // Require a newline or disallow whitespace after the commas of selector lists.
-    // There must always be a newline after the commas in multi-line selector lists.
-    'selector-list-comma-newline-after': 'always-multi-line',
-    // Require a newline or disallow whitespace before the commas of selector lists.
-    // There must never be whitespace before the commas in multi-line selector lists.
-    'selector-list-comma-newline-before': 'never-multi-line',
-    // Require a single space or disallow whitespace after the commas of selector lists.
-    // There must always be a single space after the commas in single-line selector lists.
-    'selector-list-comma-space-after': 'always-single-line',
-    // Require a single space or disallow whitespace before the commas of selector lists.
-    // There must never be whitespace before the commas.
-    'selector-list-comma-space-before': 'never',
-
-    // # Rule
-    // Require or disallow an empty line before nested rules.
-    // There must never be an empty before rules.
-    'rule-nested-empty-line-before': 'never',
-    // Disallow duplicate properties within rules.
-    'rule-no-duplicate-properties': true,
-    // Disallow shorthand properties that override related longhand properties.
-    'rule-no-shorthand-property-overrides': true,
-    // Require or disallow an empty line before non-nested rules.
-    // There must always be an empty line before rules.
-    'rule-non-nested-empty-line-before': 'always',
-    // Specify the order of properties within rules.
-    'rule-properties-order': [
+    // Disallow duplicate properties within declaration blocks.
+    'declaration-block-no-duplicate-properties': true,
+    // Disallow shorthand properties that override related longhand properties within declaration blocks.
+    'declaration-block-no-shorthand-property-overrides': true,
+    // Specify the order of properties within declaration blocks.
+    'declaration-block-properties-order': [
       [
         // Strong properties (for easy debugging)
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'content',
             'opacity',
@@ -274,7 +176,8 @@ module.exports = {
 
         // Basic box properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'top',
             'right',
@@ -301,7 +204,8 @@ module.exports = {
 
         // Flexible layout properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'align-content',
             'align-items',
@@ -320,7 +224,8 @@ module.exports = {
 
         // Multi-column layout properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'break-after',
             'break-before',
@@ -341,7 +246,8 @@ module.exports = {
 
         // Table properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'border-collapse',
             'border-spacing',
@@ -353,7 +259,8 @@ module.exports = {
 
         // Basic UI properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'cursor',
             'ime-mode',
@@ -374,7 +281,8 @@ module.exports = {
 
         // Lists and counters properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'counter-increment',
             'counter-reset',
@@ -387,7 +295,8 @@ module.exports = {
 
         // Paged media properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'orphans',
             'page-break-after',
@@ -400,7 +309,8 @@ module.exports = {
 
         // Text properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'color',
             'direction',
@@ -454,7 +364,8 @@ module.exports = {
 
         // Animation properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'animation',
             'animation-delay',
@@ -470,7 +381,8 @@ module.exports = {
 
         // Background and border properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'background',
             'background-attachment',
@@ -521,7 +433,8 @@ module.exports = {
 
         // Filter effects, masking, image properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'filter',
             'image-orientation',
@@ -536,7 +449,8 @@ module.exports = {
 
         // Marquee properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'marquee-direction',
             'marquee-play-count',
@@ -547,7 +461,8 @@ module.exports = {
 
         // Scrollbar properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'scrollbar-3dlight-color',
             'scrollbar-arrow-color',
@@ -562,7 +477,8 @@ module.exports = {
 
         // Speech properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'mark',
             'mark-after',
@@ -583,7 +499,8 @@ module.exports = {
 
         // Transform properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'transform',
             'transform-origin',
@@ -596,7 +513,8 @@ module.exports = {
 
         // Transitions properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'transition',
             'transition-delay',
@@ -608,7 +526,8 @@ module.exports = {
 
         // Stack order and zoom properties
         {
-          emptyLineBefore: false,
+          // emptyLineBefore: 'never',
+          order: 'strict',
           properties: [
             'z-index',
             'zoom',
@@ -619,9 +538,109 @@ module.exports = {
         unspecified: 'bottom',
       },
     ],
-    // Require or disallow a trailing semicolon within rules.
-    // There must always be a trailing semicolon.
-    'rule-trailing-semicolon': 'always',
+    // Require a newline or disallow whitespace after the semicolons of declaration blocks.
+    // There must always be a newline after the semicolon.
+    'declaration-block-semicolon-newline-after': 'always',
+    // Require a newline or disallow whitespace before the semicolons of declaration blocks.
+    // There must never be whitespace before the semicolons in multi-line rules.
+    'declaration-block-semicolon-newline-before': 'never-multi-line',
+    // Require a single space or disallow whitespace after the semicolons of declaration blocks.
+    // There must always be a single space after the semicolon in single-line declaration blocks.
+    'declaration-block-semicolon-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the semicolons of declaration blocks.
+    // There must never be whitespace before the semicolons.
+    'declaration-block-semicolon-space-before': 'never',
+    // Limit the number of declaration within single line declaration blocks.
+    'declaration-block-single-line-max-declarations': 1,
+    // Require or disallow a trailing semicolon within declaration blocks.
+    'declaration-block-trailing-semicolon': 'always',
+
+    // # Block
+    // Require a newline or disallow whitespace after the closing brace of blocks.
+    // There must always be a newline after the closing brace.
+    'block-closing-brace-newline-after': 'always',
+    // Require a newline or disallow whitespace before the closing brace of blocks.
+    // There must always be a newline before the closing brace in multi-line blocks.
+    'block-closing-brace-newline-before': 'always-multi-line',
+    // Require a single space or disallow whitespace after the closing brace of blocks.
+    // There must always be a single space after the closing brace in single-line blocks.
+    'block-closing-brace-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the closing brace of blocks.
+    // There must always be a single space before the closing brace in single-line blocks.
+    'block-closing-brace-space-before': 'always-single-line',
+    // Disallow empty blocks.
+    'block-no-empty': true,
+    // Disallow single-line blocks
+    'block-no-single-line': true,
+    // Require a newline after the opening brace of blocks.
+    // There must always be a newline after the opening brace.
+    'block-opening-brace-newline-after': 'always-multi-line',
+    // Require a newline or disallow whitespace before the opening brace of blocks.
+    // (this rule is totally bugged out and does not work properly)
+    // 'block-opening-brace-newline-before': false,
+    // Require a single space or disallow whitespace after the opening brace of blocks.
+    // There must always be a single space after the opening brace in single-line blocks.
+    'block-opening-brace-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the opening brace of blocks.
+    // There must always be a single space before the opening brace.
+    'block-opening-brace-space-before': 'always',
+
+    // # Selector
+    // Specify a pattern for class selectors.
+    'selector-class-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
+    // Require a single space or disallow whitespace after the combinators of selectors.
+    // There must always be a single space after the combinators.
+    'selector-combinator-space-after': 'always',
+    // Require a single space or disallow whitespace before the combinators of selectors.
+    // There must always be a single space before the combinators.
+    'selector-combinator-space-before': 'always',
+    // Specify a pattern for id selectors.
+    // 'selector-id-pattern': false,
+    // Limit the specificity of selectors.
+    'selector-max-specificity': '0,4,0',
+    // Disallow attribute selectors.
+    // 'selector-no-attribute': false,
+    // Disallow combinators in selectors.
+    // 'selector-no-combinator': false,
+    // Disallow id selectors.
+    'selector-no-id': true,
+    // Disallow type selectors.
+    'selector-no-type': true,
+    // Disallow universal selectors.
+    'selector-no-universal': true,
+    // Disallow vendor prefixes for selectors.
+    'selector-no-vendor-prefix': true,
+    // Specify single or double colon notation for applicable pseudo-elements.
+    // Applicable pseudo-elements must always use the double colon notation.
+    'selector-pseudo-element-colon-notation': 'double',
+    // Disallow the composition of:root selectors.
+    'selector-root-no-composition': true,
+
+    // # Selector list
+    // Require a newline or disallow whitespace after the commas of selector lists.
+    // There must always be a newline after the commas in multi-line selector lists.
+    'selector-list-comma-newline-after': 'always-multi-line',
+    // Require a newline or disallow whitespace before the commas of selector lists.
+    // There must never be whitespace before the commas in multi-line selector lists.
+    'selector-list-comma-newline-before': 'never-multi-line',
+    // Require a single space or disallow whitespace after the commas of selector lists.
+    // There must always be a single space after the commas in single-line selector lists.
+    'selector-list-comma-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the commas of selector lists.
+    // There must never be whitespace before the commas.
+    'selector-list-comma-space-before': 'never',
+
+    // Root Selector
+    // Disallow standard properties inside :root selectors.
+    'root-no-standard-properties': true,
+
+    // # Rule
+    // Require or disallow an empty line before nested rules.
+    // There must never be an empty before rules.
+    'rule-nested-empty-line-before': 'never',
+    // Require or disallow an empty line before non-nested rules.
+    // There must always be an empty line before rules.
+    'rule-non-nested-empty-line-before': 'always',
 
     // # Media feature
     // Require a single space or disallow whitespace after the colon in media features.
