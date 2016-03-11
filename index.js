@@ -707,6 +707,8 @@ module.exports = {
     'max-empty-lines': 2,
     // Limit the length of a line.
     'max-line-length': 120,
+    // Limit the depth of nesting.
+    'max-nesting-depth': 5,
     // Disallow duplicate selectors.
     'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
