@@ -709,6 +709,8 @@ module.exports = {
     'max-line-length': 120,
     // Limit the depth of nesting.
     'max-nesting-depth': 5,
+    // Disallow browser hacks that are irrelevant to the browsers you are targeting.
+    'no-browser-hacks': [ true, { browsers: [ '> 1%', 'last 2 versions', 'Firefox ESR' ] } ],
     // Disallow duplicate selectors.
     'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
