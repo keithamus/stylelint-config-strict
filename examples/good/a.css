@@ -1,0 +1,15 @@
+.hello-world {
+  display: block;
+}
+
+.hello-world--flash {
+  background: hsl(122, 67%, 39%);
+}
+
+.article .video .play {
+  content: '>';
+}
+
+.article .video .pause {
+  content: '||';
+}

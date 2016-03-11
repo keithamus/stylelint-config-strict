@@ -1,0 +1,14 @@
+.helloWorld {
+  display: block;
+}
+.helloWorldFlash {
+  background: green;
+}
+
+.article .video .play {
+  content: '>';
+}
+
+.article .video .pause {
+  content: '||';
+}

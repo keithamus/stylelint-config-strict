@@ -33,7 +33,8 @@
     "url": "git+ssh://github.com/keithamus/stylelint-config-strict.git"
   },
   "scripts": {
-    "test": "eslint .",
+    "pretest": "eslint .",
+    "test": "stylelint examples/good/*.css && (stylelint examples/bad/*.css || exit 0 && exit 1)",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
