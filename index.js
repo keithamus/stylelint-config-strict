@@ -71,6 +71,8 @@ module.exports = {
     'number-zero-length-no-unit': true,
 
     // # String
+    // Disallow (unescaped) newlines in strings.
+    'string-no-newline': true,
     // Specify single or double quotes around strings
     // Strings must always be wrapped with single quotes.
     'string-quotes': 'single',
