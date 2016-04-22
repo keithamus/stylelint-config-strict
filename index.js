@@ -719,6 +719,8 @@ module.exports = {
     'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
+    // Disallow colors that are suspiciously close to being identical.
+    'no-indistinguishable-colors': [ true, { threshold: 3 } ],
     // Disallow double-slash comments (//...) which are not supported by CSS.
     'no-invalid-double-slash-comments': true,
     // Disallow missing end-of-file newline.

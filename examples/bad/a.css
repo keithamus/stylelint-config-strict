@@ -20,4 +20,10 @@ BODY {
   display: block;
 }
 
+.no-indistinguishable-colors-rule {
+  color: #000;
+  background: #010101;
+}
+
+
 /* stylelint-disable no-browser-hacks */
