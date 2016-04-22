@@ -13,3 +13,9 @@
 .article .video .pause {
   content: '||';
 }
+
+/* stylelint-disable selector-no-type */
+
+body {
+  display: block;
+}
