@@ -67,3 +67,7 @@ BODY {
 .unit-case {
   width: 10PX;
 }
+
+.value-keyword-case {
+  display: BLOCK;
+}

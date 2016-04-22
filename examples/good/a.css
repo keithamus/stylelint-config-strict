@@ -67,3 +67,7 @@ body {
 .unit-case {
   width: 10px;
 }
+
+.value-keyword-case {
+  display: block;
+}

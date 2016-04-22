@@ -102,6 +102,8 @@ module.exports = {
     'value-no-vendor-prefix': true,
 
     // # Value list
+    // Specify lowercase or uppercase for keywords values.
+    'value-keyword-case': 'lower',
     // Require a newline or disallow whitespace after the commas of value lists.
     // There must always be a newline after the commas in multi-line value lists.
     'value-list-comma-newline-after': 'always-multi-line',
