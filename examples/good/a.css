@@ -47,3 +47,7 @@ body {
 .unit-no-unknown {
   width: 10px;
 }
+
+.function-name-case {
+  width: calc(10px + 1px);
+}
