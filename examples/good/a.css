@@ -60,7 +60,7 @@ body {
   width: 10px;
 }
 
-.selector-pseudo-element-case:after {
+.selector-pseudo-element-case::after {
   width: 10px;
 }
 
