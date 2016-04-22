@@ -42,3 +42,7 @@ BODY {
       1
     );
 }
+
+.unit-no-unknown {
+  width: 10pixels;
+}

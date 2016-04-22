@@ -90,6 +90,8 @@ module.exports = {
     'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
     // Specify a whitelist of allowed units.
     // 'unit-whitelist': false,
+    // Disallow unknown units.
+    'unit-no-unknown': true,
 
     // # Value
     // Disallow vendor prefixes for values.
