@@ -63,3 +63,7 @@ body {
 .selector-pseudo-element-case:after {
   width: 10px;
 }
+
+.unit-case {
+  width: 10px;
+}

@@ -90,6 +90,8 @@ module.exports = {
     // # Unit
     // Specify a blacklist of disallowed units.
     'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
+    // Specify lowercase or uppercase for units.
+    'unit-case': 'lower',
     // Specify a whitelist of allowed units.
     // 'unit-whitelist': false,
     // Disallow unknown units.
