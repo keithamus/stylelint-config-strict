@@ -43,6 +43,8 @@ module.exports = {
     'function-comma-space-before': 'never-single-line',
     // Disallow direction values in linear-gradient() calls that are not valid according to the standard syntax.
     'function-linear-gradient-no-nonstandard-direction': true,
+    // Limit the number of adjacent empty lines within functions.
+    'function-max-empty-lines': 0,
     // Require a newline or disallow whitespace on the inside of the parentheses of functions.
     // There must always be a newline if the function call is multiline.
     'function-parentheses-newline-inside': 'always-multi-line',

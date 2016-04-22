@@ -34,3 +34,11 @@ body {
 .declaration-block-no-ignored-properties {
   display: inline;
 }
+
+.function-max-empty-lines {
+  transform:
+    translate(
+      1,
+      1
+    );
+}

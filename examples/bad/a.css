@@ -33,3 +33,12 @@ BODY {
   display: inline;
   width: 100%;
 }
+
+.function-max-empty-lines {
+  transform:
+    translate(
+      1,
+
+      1
+    );
+}
