@@ -700,6 +700,8 @@ module.exports = {
     // Require or disallow an empty line before @rules.
     // There must always be an empty line before @rules.
     'at-rule-empty-line-before': ['always', { except: ['blockless-group'] }],
+    // Specify lowercase or uppercase for at-rules names.
+    'at-rule-name-case': 'lower',
     // Disallow vendor prefixes for @rules.
     'at-rule-no-vendor-prefix': true,
     // Require a newline after the semicolon of at-rules.
