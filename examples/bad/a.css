@@ -71,3 +71,12 @@ BODY {
 .value-keyword-case {
   display: BLOCK;
 }
+
+.indentation--indent-inside-parens {
+  color:
+    rgb(
+    211,
+    211,
+    211
+  );
+}

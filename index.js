@@ -728,7 +728,7 @@ module.exports = {
 
     // # General / Sheet
     // Specify indentation.
-    'indentation': 2,
+    'indentation': [ 2, { indentInsideParens: 'twice' } ],
     // Limit the number of adjacent empty lines.
     'max-empty-lines': 2,
     // Limit the length of a line.
