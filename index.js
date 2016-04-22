@@ -694,6 +694,8 @@ module.exports = {
     'at-rule-empty-line-before': ['always', { except: ['blockless-group'] }],
     // Disallow vendor prefixes for @rules.
     'at-rule-no-vendor-prefix': true,
+    // Require a newline after the semicolon of at-rules.
+    'at-rule-semicolon-newline-after': 'always',
 
     // # Comment
     // Require or disallow an empty line before comments.

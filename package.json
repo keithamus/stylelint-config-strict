@@ -61,7 +61,7 @@
     "extends": "./index.js"
   },
   "dependencies": {
-    "stylelint": "^5.1.0"
+    "stylelint": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
