@@ -17,7 +17,11 @@
 }
 
 /* stylelint-disable selector-no-type */
+/* testing selector-type-case rule */
 
 body {
   display: block;
 }
+
+/* stylelint-disable no-browser-hacks */
+/* need a reason for disable rules */

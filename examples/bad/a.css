@@ -15,7 +15,9 @@
 }
 
 /* stylelint-disable selector-no-type */
-
+/* testing selector-type-case rule */
 BODY {
   display: block;
 }
+
+/* stylelint-disable no-browser-hacks */

@@ -725,5 +725,7 @@ module.exports = {
     'no-missing-eof-newline': true,
     // Disallow animation names that do not correspond to a @keyframes declaration.
     'no-unknown-animations': true,
+    // Require a reason comment before or after stylelint-disable comments.
+    'stylelint-disable-reason': 'always-after',
   },
 };
