@@ -55,3 +55,7 @@ body {
 .property-case {
   width: 10px;
 }
+
+.selector-pseudo-class-case:hover {
+  width: 10px;
+}
