@@ -51,3 +51,7 @@ BODY {
 .function-name-case {
   width: CALC(10px + 1px);
 }
+
+.property-case {
+  WIDTH: 10px;
+}

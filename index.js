@@ -123,6 +123,8 @@ module.exports = {
     // # Property
     // Specify a blacklist of disallowed properties.
     // 'property-blacklist': false,
+    // Specify lowercase or uppercase for properties.
+    'property-case': 'lower',
     // Disallow vendor prefixes for properties.
     'property-no-vendor-prefix': true,
     // Specify a blacklist of disallowed units for specfic properties.
