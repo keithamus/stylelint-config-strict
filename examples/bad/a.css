@@ -27,3 +27,9 @@ BODY {
 
 
 /* stylelint-disable no-browser-hacks */
+
+
+.declaration-block-no-ignored-properties {
+  display: inline;
+  width: 100%;
+}

@@ -30,3 +30,7 @@ body {
 
 /* stylelint-disable no-browser-hacks */
 /* need a reason for disable rules */
+
+.declaration-block-no-ignored-properties {
+  display: inline;
+}
