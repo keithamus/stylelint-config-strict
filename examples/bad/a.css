@@ -59,3 +59,7 @@ BODY {
 .selector-pseudo-class-case:HOVER {
   width: 10px;
 }
+
+.selector-pseudo-element-case:AFTER {
+  width: 10px;
+}

@@ -626,6 +626,8 @@ module.exports = {
     'selector-no-vendor-prefix': true,
     // Specify lowercase or uppercase for pseudo-class selectors.
     'selector-pseudo-class-case': 'lower',
+    // Specify lowercase or uppercase for pseudo-element selectors.
+    'selector-pseudo-element-case': 'lower',
     // Specify single or double colon notation for applicable pseudo-elements.
     // Applicable pseudo-elements must always use the double colon notation.
     'selector-pseudo-element-colon-notation': 'double',

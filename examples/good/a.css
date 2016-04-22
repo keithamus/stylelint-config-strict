@@ -59,3 +59,7 @@ body {
 .selector-pseudo-class-case:hover {
   width: 10px;
 }
+
+.selector-pseudo-element-case:after {
+  width: 10px;
+}
