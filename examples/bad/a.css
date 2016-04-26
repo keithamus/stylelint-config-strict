@@ -85,5 +85,9 @@ BODY {
   background: #f00;
 }
 
+.selector-pseudo-class-parentheses-space-inside:not( [foo] ) {
+  background: #f00;
+}
+
 /* comment-word-blacklist */
 /* TODO: do later */

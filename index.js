@@ -632,6 +632,8 @@ module.exports = {
     'selector-no-vendor-prefix': true,
     // Specify lowercase or uppercase for pseudo-class selectors.
     'selector-pseudo-class-case': 'lower',
+    // Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
+    'selector-pseudo-class-parentheses-space-inside': 'never',
     // Specify lowercase or uppercase for pseudo-element selectors.
     'selector-pseudo-element-case': 'lower',
     // Specify single or double colon notation for applicable pseudo-elements.

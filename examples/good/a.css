@@ -84,3 +84,7 @@ body {
 .selector-attribute-brackets-space-inside[foo] {
   background: #f00;
 }
+
+.selector-pseudo-class-parentheses-space-inside:not([foo]) {
+  background: #f00;
+}
