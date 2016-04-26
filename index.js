@@ -626,6 +626,8 @@ module.exports = {
     // 'selector-no-attribute': false,
     // Disallow combinators in selectors.
     // 'selector-no-combinator': false,
+    // Disallow qualifying a selector by type.
+    'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] } ],
     // Disallow id selectors.
     'selector-no-id': true,
     // Disallow type selectors.

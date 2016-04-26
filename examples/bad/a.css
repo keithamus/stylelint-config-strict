@@ -93,5 +93,14 @@ BODY {
   margin: 1px 1px 1px 1px;
 }
 
+div.selector-no-qualifying-type {
+  background: #f00;
+}
+
+div.selector-no-qualifying-type[type='button'] {
+  background: #f00;
+}
+
+
 /* comment-word-blacklist */
 /* TODO: do later */

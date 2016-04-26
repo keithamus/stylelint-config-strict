@@ -92,3 +92,11 @@ body {
 .shorthand-property-no-redundant-values {
   margin: 1px;
 }
+
+.selector-no-qualifying-type {
+  background: #f00;
+}
+
+.selector-no-qualifying-type[type='button'] {
+  background: #f00;
+}
