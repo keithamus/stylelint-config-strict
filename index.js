@@ -604,6 +604,8 @@ module.exports = {
     'block-opening-brace-space-before': 'always',
 
     // # Selector
+    // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
+    'selector-attribute-brackets-space-inside': 'never',
     // Specify a pattern for class selectors.
     'selector-class-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
     // Require a single space or disallow whitespace after the combinators of selectors.

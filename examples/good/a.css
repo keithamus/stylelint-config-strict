@@ -80,3 +80,7 @@ body {
       211
     );
 }
+
+.selector-attribute-brackets-space-inside[foo] {
+  background: #f00;
+}

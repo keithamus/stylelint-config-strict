@@ -81,6 +81,9 @@ BODY {
   );
 }
 
+.selector-attribute-brackets-space-inside[ foo ] {
+  background: #f00;
+}
 
 /* comment-word-blacklist */
 /* TODO: do later */
