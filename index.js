@@ -725,6 +725,8 @@ module.exports = {
     // Require a single space or disallow whitespace on the inside of comment markers.
     // There must always be a single space inside the markers.
     'comment-whitespace-inside': 'always',
+    // Specify a blacklist of disallowed words within comments.
+    'comment-word-blacklist': [ 'TODO', 'FIXME', 'XXX' ],
 
     // # General / Sheet
     // Specify indentation.
