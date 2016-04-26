@@ -124,6 +124,10 @@ module.exports = {
     // Only lowercase letters and dashes, like CSS properties.
     'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
 
+    // # Shorthand property
+    // Disallow redundant values in shorthand properties.
+    'shorthand-property-no-redundant-values': true,
+
     // # Property
     // Specify a blacklist of disallowed properties.
     // 'property-blacklist': false,

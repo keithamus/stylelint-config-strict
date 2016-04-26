@@ -89,5 +89,9 @@ BODY {
   background: #f00;
 }
 
+.shorthand-property-no-redundant-values {
+  margin: 1px 1px 1px 1px;
+}
+
 /* comment-word-blacklist */
 /* TODO: do later */
