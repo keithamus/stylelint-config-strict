@@ -85,7 +85,7 @@ module.exports = {
 
     // # Time
     // Disallow animation and transition times under 100ms.
-    'time-no-imperceptible': true,
+    'time-min-milliseconds': 100,
 
     // # Unit
     // Specify a blacklist of disallowed units.
