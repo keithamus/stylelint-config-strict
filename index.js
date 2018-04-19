@@ -118,8 +118,6 @@ module.exports = {
     'value-list-comma-space-before': 'never-single-line',
 
     // # Custom property
-    // Disallow custom properties outside of :root selectors.
-    'custom-property-no-outside-root': true,
     // Specify pattern of custom properties.
     // Only lowercase letters and dashes, like CSS properties.
     'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
