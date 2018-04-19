@@ -278,8 +278,8 @@ module.exports = {
     // There must never be an empty line before nested rules
     'rule-empty-line-before': [ 'always', {
       'except': [
-        'inside-block'
-      ]
+        'inside-block',
+      ],
     }],
 
     // # Media feature
