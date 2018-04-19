@@ -1,5 +1,6 @@
 {
   "name": "stylelint-config-strict",
+  "version": "5.1.0"
   "description": "Stylelint sharable config for strict linting",
   "keywords": [
     "check",
