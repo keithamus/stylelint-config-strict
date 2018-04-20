@@ -18,7 +18,7 @@ module.exports = {
     // # Font family
     // Specify whether or not quotation marks should be used around font family names,
     // and whether single or double.
-    'font-family-name-quotes': 'single-where-required',
+    'font-family-name-quotes': 'always-where-required',
 
     // # Font weight
     // Require consistent numeric or named font-weight values.
@@ -57,7 +57,7 @@ module.exports = {
     // 'function-url-data-uris': 'always',
     // Specify single, double or no quotes for urls.
     // Url quotes must always be single.
-    'function-url-quotes': 'single',
+    'function-url-quotes': 'always',
     // Specify a whitelist of only allowed functions.
     // 'function-whitelist': false,
     // Require a single space or disallow whitespace after functions.
@@ -74,7 +74,7 @@ module.exports = {
     // Disallow trailing zeros within numbers.
     'number-no-trailing-zeros': true,
     // Disallow units for zero lengths.
-    'number-zero-length-no-unit': true,
+    'length-zero-no-unit': true,
 
     // # String
     // Disallow (unescaped) newlines in strings.
@@ -85,7 +85,7 @@ module.exports = {
 
     // # Time
     // Disallow animation and transition times under 100ms.
-    'time-no-imperceptible': true,
+    'time-min-milliseconds': 100,
 
     // # Unit
     // Specify a blacklist of disallowed units.
@@ -118,8 +118,6 @@ module.exports = {
     'value-list-comma-space-before': 'never-single-line',
 
     // # Custom property
-    // Disallow custom properties outside of :root selectors.
-    'custom-property-no-outside-root': true,
     // Specify pattern of custom properties.
     // Only lowercase letters and dashes, like CSS properties.
     'custom-property-pattern': /^.([a-z](-[a-z])?)+(__([a-z](-[a-z])?)+)?(--([a-z](-[a-z])?)+)?$/,
@@ -168,398 +166,8 @@ module.exports = {
     // # Declaration block
     // Disallow duplicate properties within declaration blocks.
     'declaration-block-no-duplicate-properties': true,
-    // Disallow property values that are ignored due to another property value in the same rule.
-    'declaration-block-no-ignored-properties': true,
     // Disallow shorthand properties that override related longhand properties within declaration blocks.
     'declaration-block-no-shorthand-property-overrides': true,
-    // Specify the order of properties within declaration blocks.
-    'declaration-block-properties-order': [
-      [
-        // Strong properties (for easy debugging)
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'content',
-            'opacity',
-            'visibility',
-            'overflow',
-            'overflow-x',
-            'overflow-y',
-            'clear',
-            'clip',
-            'float',
-            'display',
-            'vertical-align',
-            'box-sizing',
-            'position',
-          ],
-        },
-
-        // Basic box properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'top',
-            'right',
-            'bottom',
-            'left',
-            'width',
-            'max-width',
-            'min-width',
-            'height',
-            'max-height',
-            'min-height',
-            'margin',
-            'margin-top',
-            'margin-right',
-            'margin-bottom',
-            'margin-left',
-            'padding',
-            'padding-top',
-            'padding-right',
-            'padding-bottom',
-            'padding-left',
-          ],
-        },
-
-        // Flexible layout properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'align-content',
-            'align-items',
-            'align-self',
-            'flex',
-            'flex-basis',
-            'flex-direction',
-            'flex-flow',
-            'flex-grow',
-            'flex-shrink',
-            'flex-wrap',
-            'justify-content',
-            'order',
-          ],
-        },
-
-        // Multi-column layout properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'break-after',
-            'break-before',
-            'break-inside',
-            'column-count',
-            'column-fill',
-            'column-gap',
-            'column-rule',
-            'column-rule-color',
-            'column-rule-style',
-            'column-rule-width',
-            'column-span',
-            'column-width',
-            'columns',
-            'widows',
-          ],
-        },
-
-        // Table properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'border-collapse',
-            'border-spacing',
-            'caption-side',
-            'empty-cells',
-            'table-layout',
-          ],
-        },
-
-        // Basic UI properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'cursor',
-            'ime-mode',
-            'nav-down',
-            'nav-index',
-            'nav-left',
-            'nav-right',
-            'nav-up',
-            'outline',
-            'outline-color',
-            'outline-offset',
-            'outline-style',
-            'outline-width',
-            'resize',
-            'user-select',
-          ],
-        },
-
-        // Lists and counters properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'counter-increment',
-            'counter-reset',
-            'list-style',
-            'list-style-image',
-            'list-style-position',
-            'list-style-type',
-          ],
-        },
-
-        // Paged media properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'orphans',
-            'page-break-after',
-            'page-break-before',
-            'page-break-inside',
-            'marks',
-            'quotes',
-          ],
-        },
-
-        // Text properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'color',
-            'direction',
-            'font',
-            'font-family',
-            'font-feature-settings',
-            'font-kerning',
-            'font-language-override',
-            'font-size',
-            'font-size-adjust',
-            'font-stretch',
-            'font-style',
-            'font-synthesis',
-            'font-variant',
-            'font-variant-alternates',
-            'font-variant-caps',
-            'font-variant-east-asian',
-            'font-variant-ligatures',
-            'font-variant-numeric',
-            'font-variant-position',
-            'font-weight',
-            'hanging-punctuation',
-            'hyphens',
-            'letter-spacing',
-            'line-break',
-            'line-height',
-            'overflow-wrap',
-            'tab-size',
-            'text-align',
-            'text-align-last',
-            'text-combine-upright',
-            'text-decoration',
-            'text-decoration-color',
-            'text-decoration-line',
-            'text-decoration-style',
-            'text-indent',
-            'text-justify',
-            'text-orientation',
-            'text-overflow',
-            'text-shadow',
-            'text-transform',
-            'text-underline-position',
-            'unicode-bidi',
-            'white-space',
-            'word-break',
-            'word-spacing',
-            'word-wrap',
-            'writing-mode',
-          ],
-        },
-
-        // Animation properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'animation',
-            'animation-delay',
-            'animation-direction',
-            'animation-duration',
-            'animation-fill-mode',
-            'animation-iteration-count',
-            'animation-name',
-            'animation-play-state',
-            'animation-timing-function',
-          ],
-        },
-
-        // Background and border properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'background',
-            'background-attachment',
-            'background-clip',
-            'background-color',
-            'background-image',
-            'background-origin',
-            'background-position',
-            'background-poistion-x',
-            'background-poistion-y',
-            'background-repeat',
-            'background-size',
-            'border',
-            'border-color',
-            'border-image',
-            'border-image-outset',
-            'border-image-repeat',
-            'border-image-slice',
-            'border-image-source',
-            'border-image-width',
-            'border-radius',
-            'border-style',
-            'border-width',
-            'border-top',
-            'border-top-color',
-            'border-top-left-radius',
-            'border-top-right-radius',
-            'border-top-style',
-            'border-top-width',
-            'border-right',
-            'border-right-color',
-            'border-right-style',
-            'border-right-width',
-            'border-bottom',
-            'border-bottom-color',
-            'border-bottom-left-radius',
-            'border-bottom-right-radius',
-            'border-bottom-style',
-            'border-bottom-width',
-            'border-left',
-            'border-left-color',
-            'border-left-style',
-            'border-left-width',
-            'box-decoration-break',
-            'box-shadow',
-          ],
-        },
-
-        // Filter effects, masking, image properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'filter',
-            'image-orientation',
-            'image-rendering',
-            'image-resolution',
-            'mask',
-            'mask-type',
-            'object-fit',
-            'object-position',
-          ],
-        },
-
-        // Marquee properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'marquee-direction',
-            'marquee-play-count',
-            'marquee-speed',
-            'marquee-style',
-          ],
-        },
-
-        // Scrollbar properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'scrollbar-3dlight-color',
-            'scrollbar-arrow-color',
-            'scrollbar-base-color',
-            'scrollbar-darkshadow-color',
-            'scrollbar-face-color',
-            'scrollbar-highlight-color',
-            'scrollbar-shadow-color',
-            'scrollbar-track-color',
-          ],
-        },
-
-        // Speech properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'mark',
-            'mark-after',
-            'mark-before',
-            'phonemes',
-            'rest',
-            'rest-after',
-            'rest-before',
-            'voice-balance',
-            'voice-duration',
-            'voice-pitch',
-            'voice-pitch-range',
-            'voice-rate',
-            'voice-stress',
-            'voice-volume',
-          ],
-        },
-
-        // Transform properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'transform',
-            'transform-origin',
-            'transform-style',
-            'backface-visibility',
-            'perspective',
-            'perspective-origin',
-          ],
-        },
-
-        // Transitions properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'transition',
-            'transition-delay',
-            'transition-duration',
-            'transition-property',
-            'transition-timing-function',
-          ],
-        },
-
-        // Stack order and zoom properties
-        {
-          // emptyLineBefore: 'never',
-          order: 'strict',
-          properties: [
-            'z-index',
-            'zoom',
-          ],
-        },
-      ],
-      {
-        unspecified: 'bottom',
-      },
-    ],
     // Require a newline or disallow whitespace after the semicolons of declaration blocks.
     // There must always be a newline after the semicolon.
     'declaration-block-semicolon-newline-after': 'always',
@@ -593,7 +201,8 @@ module.exports = {
     // Disallow empty blocks.
     'block-no-empty': true,
     // Disallow single-line blocks
-    'block-no-single-line': true,
+    'block-opening-brace-newline-after': 'always',
+    'block-closing-brace-newline-before': 'always',
     // Require a newline after the opening brace of blocks.
     // There must always be a newline after the opening brace.
     'block-opening-brace-newline-after': 'always-multi-line',
@@ -629,11 +238,12 @@ module.exports = {
     // Disallow qualifying a selector by type.
     'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] } ],
     // Disallow id selectors.
-    'selector-no-id': true,
-    // Disallow type selectors.
-    'selector-no-type': true,
+    'selector-max-id': 0,
+    // Disallow nested type selectors.
+    'selector-max-type': 1,
     // Disallow universal selectors.
-    'selector-no-universal': true,
+    'selector-max-universal': 0,
+
     // Disallow vendor prefixes for selectors.
     'selector-no-vendor-prefix': true,
     // Specify lowercase or uppercase for pseudo-class selectors.
@@ -645,8 +255,6 @@ module.exports = {
     // Specify single or double colon notation for applicable pseudo-elements.
     // Applicable pseudo-elements must always use the double colon notation.
     'selector-pseudo-element-colon-notation': 'double',
-    // Disallow the composition of:root selectors.
-    'selector-root-no-composition': true,
     // Specify lowercase or uppercase for type selector.
     'selector-type-case': 'lower',
 
@@ -664,17 +272,15 @@ module.exports = {
     // There must never be whitespace before the commas.
     'selector-list-comma-space-before': 'never',
 
-    // Root Selector
-    // Disallow standard properties inside :root selectors.
-    'root-no-standard-properties': true,
-
     // # Rule
-    // Require or disallow an empty line before nested rules.
-    // There must never be an empty before rules.
-    'rule-nested-empty-line-before': 'never',
-    // Require or disallow an empty line before non-nested rules.
-    // There must always be an empty line before rules.
-    'rule-non-nested-empty-line-before': 'always',
+    // Require or disallow an empty line before rules.
+    // There must always be an empty before rules.
+    // There must never be an empty line before nested rules
+    'rule-empty-line-before': [ 'always', {
+      'except': [
+        'inside-block',
+      ],
+    }],
 
     // # Media feature
     // Require a single space or disallow whitespace after the colon in media features.
@@ -685,8 +291,6 @@ module.exports = {
     'media-feature-colon-space-before': 'never',
     // Disallow vendor prefixes for media feature names.
     'media-feature-name-no-vendor-prefix': true,
-    // Ensure that non-boolean media features have the punctuation they need: either a colon or a range-operator.
-    'media-feature-no-missing-punctuation': true,
     // Require a single space or disallow whitespace after the range operator in media features.
     // There must always be a single space after the range operator.
     'media-feature-range-operator-space-after': 'always',
@@ -702,7 +306,7 @@ module.exports = {
     // # Media query
     // Require a single space or disallow whitespace on the inside of the parentheses within media queries.
     // There must never be whitespace on the inside the parentheses.
-    'media-query-parentheses-space-inside': 'never',
+    'media-feature-parentheses-space-inside': 'never',
 
     // # Media query list
     // Require a newline or disallow whitespace after the commas of media query lists.
@@ -721,7 +325,7 @@ module.exports = {
     // # At rule
     // Require or disallow an empty line before @rules.
     // There must always be an empty line before @rules.
-    'at-rule-empty-line-before': ['always', { except: ['blockless-group'] }],
+    'at-rule-empty-line-before': ['always', { except: ['blockless-after-blockless'] }],
     // Specify lowercase or uppercase for at-rules names.
     'at-rule-name-case': 'lower',
     // Disallow vendor prefixes for @rules.
@@ -747,21 +351,15 @@ module.exports = {
     'max-line-length': 120,
     // Limit the depth of nesting.
     'max-nesting-depth': 5,
-    // Disallow browser hacks that are irrelevant to the browsers you are targeting.
-    'no-browser-hacks': [ true, { browsers: [ '> 1%', 'last 2 versions', 'Firefox ESR' ] } ],
     // Disallow duplicate selectors.
     'no-duplicate-selectors': true,
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
-    // Disallow colors that are suspiciously close to being identical.
-    'no-indistinguishable-colors': [ true, { threshold: 3 } ],
     // Disallow double-slash comments (//...) which are not supported by CSS.
     'no-invalid-double-slash-comments': true,
-    // Disallow missing end-of-file newline.
-    'no-missing-eof-newline': true,
+    // Disallow missing end-of-source newline.
+    'no-missing-end-of-source-newline': true,
     // Disallow animation names that do not correspond to a @keyframes declaration.
     'no-unknown-animations': true,
-    // Require a reason comment before or after stylelint-disable comments.
-    'stylelint-disable-reason': 'always-after',
   },
 };
